@@ -1,0 +1,79 @@
+#contact {
+    padding: 0em 2em;
+    text-align: left;
+}
+
+#contactTitle {
+    text-align: center;
+    padding: 1.5em 0em;
+}
+
+#contact i {
+    margin-right: 1em;
+}
+
+/*---------------------- CONTACTS FORM -----------------------------*/
+
+
+#contactForm {
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 1em;
+}
+#contact h3 {
+    justify-self: start;
+}
+#contactForm input {
+    width: 100%;
+    padding: 1em 2em ;
+    margin: 0em 0em 1em 0em;
+}
+#commentorb {
+    width: 100%;
+}
+#sendMessage {
+    background-color: #ff4f02;
+    width: 100%;
+    color: white;
+    padding: 1em 2em;
+    border: #ff4f02;
+    margin-top: 2em;
+    cursor: pointer
+}
+#contactflex-container h3 {
+    padding-top: 1em;
+}
+#rubenul {
+    list-style-type: none;
+}
+#rubenul li {
+    padding-top: 2em ;
+    padding: 1em;
+}
+
+#contactflex-container p {
+    font-size: 14px;
+}
+.contactflex-container1 img {
+    justify-content: space-between;
+    margin: 1em 1em 0em 0em;
+}
+
+/*social*/
+#liLine {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
+}
+#liLine li {
+    display: inline-block;
+}
+
+.fa-brands {
+    color:lightgray;
+}
+
+.fa-brands:hover {
+    color: #ff4f02;
+}
+

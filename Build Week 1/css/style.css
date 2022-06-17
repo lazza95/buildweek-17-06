@@ -1,0 +1,161 @@
+/* -------------------GENERAL-------------------- */
+* {box-sizing: border-box;}
+
+@font-face {
+    font-family: myFont;
+    src: url(../webfonts/ufonts.com_tw-cen-mt.ttf);
+}
+
+html {
+    font-size: 67.5%;
+}
+
+body {
+    text-align: center;
+    font-family: myFont;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+}
+
+h2{
+    font-size: 3rem;
+    line-height: 4.5rem;
+    margin-top: 3em;
+}
+
+h3{ 
+    font-size: 3rem; 
+    line-height: 3rem;
+    font-weight: 600;
+    padding: 2em;
+}
+h4{
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 500;
+}
+p{
+    font-size: 1rem;
+    color: #959595;
+}         
+.paraBig{font-size: 1.25rem;
+}
+.paraBigBig{font-size: 1,5rem;
+}
+a {text-decoration: none;}
+
+
+hr{
+    width: 120px;
+    color:  #9D9D9D; 
+    margin: 1.5em auto;  
+    opacity: 0.7;
+} 
+
+#blog hr {
+    margin: 0em auto;
+}
+
+.orange {color:#fc5535;}
+
+/* -------------------HEADER-------------------- */
+header {
+    background: url(../images/header.jpg) no-repeat center center;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-size: 1.5rem;
+    padding: 0em 1em;
+}
+
+
+/* -------------------NAV---------------------- */
+
+header #navbar {
+    background: rgb(255, 255, 255, 0.8);
+    display: grid;
+    grid-template-areas: "logo hamburger"
+                        "list list";
+    align-items: center;
+    width: 95%;
+    row-gap: 1em;
+    margin: 1em;
+    padding: 1em 3em;
+    z-index: 10;
+}
+
+header #navbar #logo {
+    grid-area: logo;
+}
+
+header .menu-icon {
+    grid-area: hamburger;
+    justify-self:end;
+}
+
+header .menu-icon .fa-bars {
+    color: #fc5535;
+}
+
+header #navbar #hamburger {
+    display:none;
+    grid-area: list;
+    list-style: none;
+    justify-self: start;
+    text-align: left;
+    width: 100%;
+}
+
+header #hamburger li {
+    margin-bottom: 1em;
+}
+
+header #hamburger li:hover {
+    border-bottom: 3px solid #fc5535;
+}
+
+.underlined {
+    border-bottom: 3px solid #fc5535;
+}
+header #hamburger li a {
+    color: black;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    min-width:90%;
+    max-width:95%;
+}
+
+
+/* -------------------FOOTER-------------------- */
+
+footer{
+    background: #E9E9E9;
+    padding: 1.5rem 0px;
+  }
+footer p {
+    text-align: center;
+    padding-top: 1rem;
+    color: #454545;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+  }
+footer p a {
+    color: #FF4F02;
+}
+
+/*----------------ANIMATION--------------------*/
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: .4s;
+    transition-delay: .3s;
+}
+.inView {
+    opacity: 1;
+    transform: translateY(0px);
+}

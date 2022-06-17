@@ -1,0 +1,45 @@
+/*------------------------------ GENERAL -----------------------------*/
+
+#home {
+    margin: 6em 3em;
+    padding: 1em 2em;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "title button"
+                        "slider slider";
+
+}
+#home h2 {
+    font-size: 2rem;
+    grid-area: title;
+    justify-self: start;
+    font-weight: 500;
+    margin: 0em;
+}
+
+/*----------------------------- SLIDER ------------------------------*/
+
+#slider {
+    grid-area: slider;
+    justify-self: center;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+    overflow-x: auto;
+    width: 100%;
+    margin: 2em 0em;
+}
+
+#slider::-webkit-scrollbar {
+    display:none;
+}
+
+#home #slide-right {
+    grid-area: button;
+    justify-self: end;
+    cursor: pointer;
+}
+
+#home #slide-right .fa-angle-right {
+    opacity: 0.3;
+}

@@ -1,0 +1,100 @@
+                /*MENU CONTENITORE*/
+#menu{              
+    display: inline-block;    
+}
+
+#menu-header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+
+
+.menu-b{
+    padding: 3em 6em;
+    text-align: justify;
+}
+                    
+                    /*DESCRIZIONE SOTTO  A TITOLO*/
+.description {
+    color: #9D9D9D;
+    font-size: 1rem; 
+    line-height: 2rem; 
+    padding: 2em;    
+    text-align: center;
+    margin: 0 6em 0 6em;
+}
+      /*tolgo i puntini della lista*/
+
+.menu-b h4{
+    margin-left: 1em;
+}
+#menu li{
+    list-style-type: none;
+} 
+                
+#li-button {
+    display: grid;
+    justify-content: end;
+}
+/*---------------------------- PLATES ----------------------------*/
+.plates{
+    padding: 1em;    
+    display: flex;
+    flex-flow: column nowrap;
+ }
+
+.plates-head {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    margin-bottom: .5em;
+}
+
+
+.dotted-line {
+    border-bottom: 2px dotted #9D9D9D;
+    flex-grow: 10;
+    display: grid;
+    justify-content: end;
+    padding:0;
+}
+
+.money {
+    margin:0;
+    padding:0;
+    color:#9D9D9D;
+    font-size: 0.9;
+    align-self: end;
+}
+
+.plates p {
+    color: #9D9D9D;
+    font-size: 1.1;
+}
+
+
+                                            /*button*/
+#info-button{
+    background:none;
+    text-align: center;
+    padding: 2em 6em;
+    color: #FF4F02;
+    border: 1px solid #FF4F02;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor:pointer;
+    text-decoration: none;
+    font-weight: bold;
+    width: 30em;
+}
+
+ #info-button:hover {
+    color:white;
+     background-color:#FF4F02;
+     transition: background-color 1s,
+     color 1s;
+
+}
+

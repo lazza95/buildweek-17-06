@@ -1,0 +1,68 @@
+#blog {
+    text-align: center;
+    background-image: url(../images/blog/blog-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4.5em 1em 6em 1em;
+    background-attachment: fixed;
+    font-size: 22px;
+    padding: 2em;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+#blog-box { /*------------------------------- UL --------------------------------------*/
+    padding: 0em;
+    margin:2em;
+    background-color: white;
+
+}
+
+    #blog-box img{
+        width: 100%;
+    }
+
+    #blog h3 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+        padding: 1em;
+
+
+    }
+
+    #blog p {
+        color: black;
+        font-size: 14px;
+        padding: 1.5em;
+        line-height: 1.5em;
+    }
+    #btn-container {
+        margin: 0em;
+        padding: 0em 0em 0em 2em;
+        width: 100%;
+        text-align: left;
+    }
+
+    #buttonBlog {
+        padding: 3em 8em;
+        justify-self: start;
+        width: 40%;
+        background: #FF4F02;
+        color: white;
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        border: none;
+        cursor:pointer;
+    }
+    #buttonBlog:hover {
+        border: 3px solid #FF4F02;
+        color:white;
+        background: none;
+        transition: background-color 1s,
+        color 1s;
+    }
+
+

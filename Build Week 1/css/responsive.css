@@ -1,0 +1,209 @@
+/*------------------------------- TABLET ---------------------------------*/
+
+@media screen and (min-width:768px) {
+    
+    /*----------NAVBAR----------*/
+    header #navbar {
+        display: grid;
+        grid-template-areas: "logo list"
+        "logo list";
+        align-items: center;
+        padding: 2em 1em;
+        max-height: 100px;
+    }
+    
+    header .menu-icon {
+        display:none;
+    }
+    
+    header #logo {
+        grid-area: logo;
+        align-self: center;
+    }
+    
+    header #navbar #hamburger {
+        grid-area: list;
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    
+    header #navbar #hamburger li {
+        display: inline;
+        margin: 0em .5em;
+    }
+    
+    /*------------   NEWS   ---------------------*/
+
+    #subscribe .form-group{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /*------------ BLOG ------------------*/
+    #blog-box li {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #blog-box img {
+        display: inline;
+        width: 50%;
+    }
+
+    #blog-box li .even-img {
+        order: 1;
+    }
+
+    #blog-box .blog-content {
+        display: inline;
+        width: 50%;
+    }
+
+    #btn-container {
+        text-align: center;
+    }
+    
+    /*------------ CONTACTS ----------------------*/
+
+    #contactTitle {
+        font-size: 36px;
+    }
+    #contactTitle span {
+        font-size: 45px;
+    }
+
+    #sendMessage {
+        text-align: center;
+        width: 50%;
+        justify-self: center;
+    }
+    #contactflex-container {
+        padding-top: 4em;
+    }
+    .contInfo ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .contInfo li {
+        margin-right: 1em;
+    }
+}
+/* ---------------------------------------- LAPTOP -----------------------------------------*/
+@media screen and (min-width:992px) {
+    /*---------BLOG-----------*/
+
+    #blog-box {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    #blog-box .responsive-flex {
+        display:inline;
+        width: 50%;
+    }
+    
+
+    #blog-box li {
+        width:100%;
+    }
+
+    #blog-box .mid-row img, #blog-box .mid-row .even-img{
+        order: 1;
+    }
+
+
+    #blog-box li .even-img {
+        order: 0;
+    }
+
+    #btn-container {
+        padding-right: 2em;
+        text-align:right;
+    }
+
+    .content-right::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        right: 0;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+        background: #fff;
+        transform: rotate(45deg);
+        margin-left: -15px;
+        z-index:2;
+    }
+
+    .content-left::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 50%;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        margin-top: 0px;
+        background: #fff;
+        transform: rotate(45deg);
+        z-index: 2;
+    }
+    /*------------------- CONTACTS -------------------*/
+    #sendMessage {
+        justify-self: end;
+    }
+    #contactflex-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contInfo ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .contactflex-container1 {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2em;
+    }
+}
+/*----------------------------------------- DESKTOP ----------------------------------------*/
+@media screen and (min-width:1200px) {
+    html {
+        font-size: 80%;
+    }
+
+    #navbar, #home, #blog-box {
+        width: 70%;
+        margin: 1em auto;
+    }
+
+    #buttonBlog {
+        margin-right: 15.5em;
+    }
+
+    #contact-responsive {
+        width: 85%;
+        margin: auto;
+    }
+
+    .contactflex-item {
+        padding: 1em auto;
+        margin: 1em auto;
+    }
+
+    .contactflex-container1 {
+        justify-content: start;
+    }
+
+
+    /*------------- CONTACTS --------------*/
+    #sendMessage {
+        width: 45%;
+    }
+}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="One restaurant website">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/aboutus.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-------------------------------------CONTAINER-------------------------------->
+    <div id="container"> 
+        <!---------------------------------HEADER----------------------------------->
+        <!--Daniele-->
+        <header>
+            <a id="home-a"></a>
+
+
+            <!-------------------------NAV------------------------------>
+            <nav id="navbar"> 
+                <img src="images/logo.png" alt="Restaurant's logo" id="logo">
+                <ul id="hamburger">
+                    <li id="home-link"><a href="#home-a">HOME</a></li>
+                    <li id="about-us-link"><a href="#aboutus-a">ABOUT US</a></li>
+                    <li id="blog-link"><a href="#blog-a">BLOG</a></li>
+                    <li id="menu-link"><a href="#menu-a">MENU</a></li>
+                    <li id="news-link"><a href="#news-a">NEWS</a></li>
+                    <li id="contact-link"><a href="#contacts-a">CONTACTS</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="menu-icon" onclick="hamburger()">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </a>
+            </nav>
+        </header>
+        <!-------------------------------------MAIN--------------------------------->
+        <main>
+            <!---------------------------------HOME--------------------------------->
+            <!--Daniele-->
+            <section id="home">
+
+                <h2>FEATURED <span class="orange">WORKS</span></h2>
+                <a id="slide-right" href="javascript:void(0)">
+                    <i class="fa-solid fa-angle-right fa-3x"></i>
+                </a>
+                <div id="slider">
+                    <img id="slide-1" class="slide" src="images/slider/slider-img-1.jpg" alt="">
+                    <img id="slide-2" class="slide" src="images/slider/slider-img-2.jpg" alt="">
+                    <img id="slide-3" class="slide" src="images/slider/slider-img-3.jpg" alt="">
+                    <img id="slide-4" class="slide" src="images/slider/slider-img-4.jpg" alt="">
+                    <img id="slide-5" class="slide" src="images/slider/slider-img-1.jpg" alt="">
+                    <img id="slide-6" class="slide" src="images/slider/slider-img-2.jpg" alt="">
+                    <img id="slide-7" class="slide" src="images/slider/slider-img-3.jpg" alt="">
+                    <img id="slide-8" class="slide" src="images/slider/slider-img-4.jpg" alt="">
+                </div>
+            </section>
+            <!------------------------------ABOUT US------------------------------->
+            <!--Riccardo-->
+            <section id="about-us"> 
+                <a id="aboutus-a"></a>
+                <div id="aboutus-container">
+            
+                    <img class="fade-in" id="cooker" src="images/cooker-img.png" alt="cooker-img" />
+                    <h2 class="fade-in"> 
+                      Your <span class="orange">Restaurant’s</span> <br>
+                      Website Has To Look <span class="orange">Good</span>
+                    </h2>
+                    <hr>
+                    <p class="fade-in paraBig">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                      enim <br>
+                      ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in
+                      reprehenderit in <br>voluptate velit esse cillum dolore eu
+                      fugiat nulla pariatur. Excepteur sint occaecat
+                    </p>
+                </div>
+
+            </section>
+            <!--------------------------------BLOG---------------------------------->
+
+            <section id="blog">
+                <a id="blog-a"></a>
+                <h2 class="fade-in">Last <span class="orange">From</span> the <span class="orange">Blog</span></h2>
+                <hr>
+                <ul id="blog-box">
+                    <div class="responsive-flex">
+                    <li class="fade-in">
+                        <img class="blog-img" src="./images/blog/blog-img-1.jpg" alt="foto1">
+                        <div class="blog-content content-right">
+                            <h3>Homestyle Chicken Pot Pie</h3>
+                            <hr>
+                            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div>
+                    </li>
+                    </div>
+                    <div class="responsive-flex">
+                    <li class="fade-in" >
+                        <img class="even-img blog-img" src="./images/blog/blog-img-2.jpg" alt="foto2">
+                        <div class="blog-content even content-right">
+                            <h3>Homestyle Chicken Pot Pie</h3>
+                            <hr>
+                            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div>  
+                    </li>
+                    </div>
+                    <div class="responsive-flex">
+                    <li class="mid-row fade-in">                        
+                        <img class="blog-img" src="./images/blog/blog-img-3.jpg" alt="foto3">
+                        <div class="blog-content content-left">
+                            <h3>Homestyle Chicken Pot Pie</h3>
+                            <hr>
+                            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div>    
+                    </li>
+                    </div>
+                    <div class="responsive-flex">
+                    <li class="mid-row fade-in">
+                        <img class="even-img blog-img" src="./images/blog/blog-img-4.jpg" alt="foto4">
+                        <div class="blog-content even content-left">
+                            <h3>Homestyle Chicken Pot Pie</h3>
+                            <hr>
+                            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div> 
+                    </li>
+                    </div>
+                    <div class="responsive-flex">
+                    <li class="fade-in" >                       
+                        <img class="blog-img" src="./images/blog/blog-img-5.jpg" alt="foto5">
+                        <div class="blog-content content-right">
+                            <h3>Homestyle Chicken Pot Pie</h3>
+                            <hr>
+                            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div>  
+                        </div>                      
+                    </li>
+                    <div class="responsive-flex">
+                    <li class="fade-in" >                  
+                        <img class="even-img blog-img" src="./images/blog/blog-img-6.jpg" alt="foto6">
+                        <div class="blog-content even content-right">
+                            <h3>Homestyle Chicken Pot Pie</h3>
+                            <hr>
+                            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div>                   
+                    </li>
+                    </div>
+                </ul>
+                <div id="btn-container">
+                    <button class="fade-in" id="buttonBlog">MORE INFO</button>
+                </div>
+            </section>
+
+
+            <!------------------------------MENU------------------------------->
+            <!--Luca-->
+            <section id="menu"> <!--menu header-->
+                <a id="menu-a"></a>
+                <div id="menu-header">
+                    <h2>our <span class="orange">MENU</span> the <span class="orange">PRICE</span></h2>
+                    <hr> 
+                    <p class="description paraBig">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad min
+                    </p>
+                </div> 
+                <div class="menu-b"> <!--menu body-->
+                        <h4>FEATURED <span class="orange">ON THE WEEK</span></h4>
+                    <ul>
+                        <li>
+                            <div class="plates fade-in">
+                                <div class="plates-head">
+                                    <h4>Pancakes n'Such</h4><span class="dotted-line"><span class="money">$ 25.00</span></span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&amp;&amp;</p>
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="plates fade-in">
+                                <div class="plates-head">
+                                    <h4>Homestyle Chicken Pot Pie</h4><span class="dotted-line"><span class="money">$ 10.00</span></span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&amp;&amp;</p>
+                            </div>
+                        </li>   
+                        <li> 
+                            <div class="plates fade-in">
+                                <div class="plates-head">
+                                    <h4>Cereal,Panecillos y Frutas</h4><span class="dotted-line"><span class="money">$ 5.00</span></span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&amp;&amp;</p>    
+                            </div>       
+                        </li>
+                        <li>
+                            <div class="plates fade-in">
+                                <div class="plates-head">
+                                    <h4>Meat of Skewers</h4><span class="dotted-line"><span class="money">$ 15.00</span></span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&amp;&amp;</p>
+                            </div>           
+                        </li>
+                        <li>
+                            <div class="plates fade-in"> 
+                                <div class="plates-head">  
+                                    <h4>Steack with a Garlic and Parsley Risotto</h4><span class="dotted-line"><span class="money">$ 75.00</span></span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&amp;&amp;</p>
+                            </div>            
+                        </li>   
+                        <li>
+                            <div class="plates fade-in"> 
+                                <div class="plates-head">  
+                                    <h4>Caesar Salad</h4><span class="dotted-line"><span class="money">$ 7.00</span></span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&amp;&amp;</p>
+                            </div>            
+                        </li>
+                        <li id="li-button">
+                            <a href="#" class="fade-in" id="info-button">More Info</a>
+                        </li>    
+                    </ul>    
+                </div>   
+                  
+            </section>           
+            <!------------------------------NEWS------------------------------->
+            <!--Flavian-->
+            <section id="news">
+                <a id="news-a"></a>
+                <div id="subscribe">
+                    <div class="block">
+                        <h2 class="heading fade-in"> SUBSCRIBE <span>to our</span> NEWSLETTER</h2>
+                        <p class="paraBigBig">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                         <form class="form-inline">
+                            <div class="form-group fade-in">
+                                <input type="email" class="form-control" id="exampleInputAmount" placeholder="Enter your email to subscribe...">
+                                    <div class="input-group-addon">
+                                        <button class="btn btn-default fade-in" type="submit">subscribe</button>
+                                    </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!------------------------------CONTACTS------------------------------->
+            <!--Ruben-->
+            <section id="contact">
+            <div id="contact-responsive">
+                <a id="contacts-a"></a>
+                <h2 class="fade-in" id="contactTitle">our <span class="orange">CONTACT US</span></h2>
+                <hr>
+                <div id="contactForm">
+                    <h3>SIGN UP FOR <span class="orange">EMAIL ALERTS</span></h3>
+                    <form>
+                        <label for="namerb"></label>
+                            <input type="text" class="fade-in" id="namerb" name="namerb" placeholder="Write your full name here..."><br>
+                        <label for="email"></label>
+                            <input type="emailrb" class="fade-in" id="emailrb" name="emailrb" placeholder="Write your email address here..."><br>
+                        <label for="commento"></label>
+                        <textarea name="commentorb" class="fade-in" id="commentorb"  rows="9" placeholder="Write your message here..."></textarea><br>
+                    </form>
+                    <a href="#home-a"><button class="fade-in" id="sendMessage">SEND YOUR MESSAGE</button></a>
+                </div>
+            <div id="contactflex-container">
+                <div class="contactflex-container1 contInfo fade-in">
+                    <h4>CONTACT <span class="orange">INFO</span></h4>
+                    <ul id="rubenul">
+                    <li><h4><i class="fa-solid fa-phone"></i><span class="orange">Telefone</span></h4>
+                        <p>(000)123 456 78-(000) 123 4567 89</p></li>
+                    <li><h4><i class="fa-solid fa-location-dot"></i><span class="orange">Address</span></h4>
+                       <p>2046 Blue Spruce Lane Laurel Canada</p></li>
+                    <li><h4><i class="fa-solid fa-envelope"></i><span class="orange">E mail</span></h4>
+                       <p>rest@gmail.com - rest@mail.ru</p></li>
+                    </ul>    
+                </div>
+                <div class="contactflex-container1 fade-in">
+                    <div>
+                        <h4>LATEST <span class="orange">BLOG POSTS</span></h4>
+                    </div>
+                    <div class="contactflex-item">
+                        <a href="#home-a"><h4><span class="orange">Nov 9-2014</span></h4></a>
+                        <p> Lorem ipsum dolor sit amet, consectetur adip iscing elit.<br>Curabitur ut blandit sapien</p>
+                    </div>
+                    <div class="contactflex-item">
+                        <a href="#home-a"><h4><span class="orange">Sep 8-2014</span></h4></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit.<br>Curabitur ut blandit sapien </p>
+                    </div>
+                </div>
+                <div class="contactflex-container1 thirdC fade-in">
+                    <div class="contactflex-item">
+                        <h4>PHOTO <span >STREAM</span></h4>
+                    </div>
+                    <div class="contactflex-item">
+                        <a href="#home-a"><img src="images/photo/photo-1.jpg" alt="foto1"></a>
+                        <a href="#home-a"><img src="images/photo/photo-2.jpg" alt="foto2"></a>
+                        <a href="#home-a"><img src="images/photo/photo-3.jpg" alt="foto3"></a>
+                        <a href="#home-a"><img src="images/photo/photo-4.jpg" alt="foto4"></a>
+                    </div>
+                    <div class="lastC fade-in"> 
+                        <h4>Follow <span class="orange">US</span></h4>
+                        <ul id="liLine">
+                            <li><a href="#home-a"><i class="fa-brands fa-twitter-square fa-3x"></i></a></li>
+                            <li><a href="#home-a"><i class="fa-brands fa-facebook fa-3x"></i></a></li>
+                            <li><a href="#home-a"><i class="fa-brands fa-dribbble-square fa-3x"></i></a></li>
+                            <li><a href="#home-a"><i class="fa-brands fa-behance-square fa-3x"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            </section>
+        </main>
+            
+            <!-------------------   FOOTER    ------------------------->
+        <footer>
+            <div class="block">
+                    <p>Copyright &copy; 2014 - All Rights Reserved.Design and Developed By <a href="#">Themefisher</a></p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html> 
